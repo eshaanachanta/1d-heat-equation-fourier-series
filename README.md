@@ -63,6 +63,12 @@ $$
 e^{-\alpha \left(\frac{n \pi}{L}\right)^2 t}
 $$
 
+Each sine wave in the Fourier series represents a pattern of temperature variation along the rod.
+
+The decay term multiplies each sine wave, showing how much of that wave remains at time 
+𝑡
+
+
 
 ## Fourier Series Solution
 
