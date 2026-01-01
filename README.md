@@ -58,6 +58,8 @@ $$
 The program plots the temperature distribution along the rod at multiple time snapshots.  
 These plots illustrate how heat diffuses and how temperature variations smooth out over time.
 
+![image_alt](https://github.com/eshaanachanta/1d-heat-equation-fourier-series/blob/main/Heat%20Diffusion%20Illustration.png?raw=true)
+
 ---
 
 ## How to Run
