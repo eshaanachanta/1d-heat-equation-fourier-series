@@ -20,6 +20,11 @@ The partial differential equation that governs heat flow in a 1D rod is:
 
 $$\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}$$
 
+- Describes how temperature $$\(u(x,t)\)$$ changes over time along a rod.
+- $$\(\frac{\partial u}{\partial t}\)\$$ = rate of change of temperature with time.
+- $$\(\alpha \frac{\partial^2 u}{\partial x^2}\)\$$ = how temperature spreads spatially.
+- $$\(\alpha\)\$$ = thermal diffusivity of the rod.
+
 
 ---
 
@@ -41,6 +46,24 @@ $$
 
 ---
 
+The Fourier sine coefficients \(B_n\) are given by:
+
+$$
+B_n = \frac{2}{L} \int_0^L f(x) \, \sin\left(\frac{n \pi x}{L}\right) \, dx
+$$
+
+These coefficients represent the **contribution of each sine wave** to the initial temperature profile.
+
+- $$\(B_n\)\$$ tells us the contribution of each sine wave to the initial temperature profile \(f(x)\).
+- Larger $$\(B_n\)\$$ → this sine mode has a bigger impact.
+
+The decay of each sine mode over time is given by:
+
+$$
+e^{-\alpha \left(\frac{n \pi}{L}\right)^2 t}
+$$
+
+
 ## Fourier Series Solution
 
 $$
@@ -51,20 +74,11 @@ B_n
 e^{-\alpha\left(\frac{n\pi}{L}\right)^2 t}
 $$
 
+- Each term is a sine wave multiplied by its coefficient $$\(B_n\)\$$.
+- The exponential decay $$\( e^{-\alpha (n \pi / L)^2 t} \)\$$ shows how each mode fades over time.
+- Summing all modes reconstructs the full temperature profile.
+
 ---
-
-The Fourier sine coefficients \(B_n\) are given by:
-
-$$
-B_n = \frac{2}{L} \int_0^L f(x) \, \sin\left(\frac{n \pi x}{L}\right) \, dx
-$$
-
-These coefficients represent the **contribution of each sine wave** to the initial temperature profile.  
-The decay of each sine mode over time is given by:
-
-$$
-e^{-\alpha \left(\frac{n \pi}{L}\right)^2 t}
-$$
 
 
 ## Output
