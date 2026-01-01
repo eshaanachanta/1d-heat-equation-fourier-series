@@ -53,6 +53,20 @@ $$
 
 ---
 
+The Fourier sine coefficients \(B_n\) are given by:
+
+$$
+B_n = \frac{2}{L} \int_0^L f(x) \, \sin\left(\frac{n \pi x}{L}\right) \, dx
+$$
+
+These coefficients represent the **contribution of each sine wave** to the initial temperature profile.  
+The decay of each sine mode over time is given by:
+
+$$
+e^{-\alpha \left(\frac{n \pi}{L}\right)^2 t}
+$$
+
+
 ## Output
 
 The program plots the temperature distribution along the rod at multiple time snapshots.  
