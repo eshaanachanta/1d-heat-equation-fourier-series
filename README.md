@@ -31,6 +31,7 @@ $$\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}$$
 ## Boundary Conditions
 
 We use Dirichlet boundary conditions:
+We fix the temperature(U) at the end of the rods to 0 units.
 
 $$
 u(0,t) = u(L,t) = 0
@@ -39,6 +40,8 @@ $$
 ---
 
 ## Initial Condition
+
+We can then set a function f(x) as our temperature function in space.
 
 $$
 u(x,0) = f(x)
@@ -52,10 +55,10 @@ $$
 B_n = \frac{2}{L} \int_0^L f(x) \, \sin\left(\frac{n \pi x}{L}\right) \, dx
 $$
 
-These coefficients represent the **contribution of each sine wave** to the initial temperature profile.
+These coefficients represent the contribution of each sine wave to the temperature profile.
 
-- $$\(B_n\)\$$ tells us the contribution of each sine wave to the initial temperature profile \(f(x)\).
-- Larger $$\(B_n\)\$$ → this sine mode has a bigger impact.
+- $$\(B_n\)\$$ tells us the contribution of each sine wave to the temperature profile \(f(x)\).
+- Larger $$\(B_n\)\$$  this sine mode has a bigger impact on the profile.
 
 The decay of each sine mode over time is given by:
 
@@ -63,7 +66,7 @@ $$
 e^{-\alpha \left(\frac{n \pi}{L}\right)^2 t}
 $$
 
-Each sine wave in the Fourier series represents a pattern of temperature variation along the rod.
+Each sine wave in the Fourier series represents temperature variation along the rod.
 
 The decay term multiplies each sine wave, showing how much of that wave remains at time 
 𝑡
